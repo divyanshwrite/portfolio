@@ -2,7 +2,7 @@
 
 Welcome to my **Modern UI Portfolio Project**! This project demonstrates my ability to create an eye-catching, interactive user interface inspired by a professional-level design in Figma. The project focuses on a cohesive dark theme, intuitive layouts, and engaging visual elements, using **HTML**, **CSS**, and **Tailwind CSS**.
 
-![Project Screenshot](./https://bentogrids.com/cdn-cgi/image/width=1024,metadata=none,fit=scale-down,format=auto/https://s.bentogrids.com/cm188k4jz000012uokwhjvdac.png)
+![Project Screenshot](https://bentogrids.com/cdn-cgi/image/width=1024,metadata=none,fit=scale-down,format=auto/https://s.bentogrids.com/cm188k4jz000012uokwhjvdac.png)
 
 ## 🎨 Project Overview
 
