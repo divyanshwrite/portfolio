@@ -23,21 +23,15 @@
 
         .card {
             --r: 25px;
-            /* corner radius */
             --s: 100px;
-            /* corner size */
             width: 100%;
             height: auto;
             padding: 2rem;
             background-color: #1F2937;
-            /* Card background color */
             color: #fff;
-            /* Text color */
-            /* border-radius: var(--r);  */
             --_m: /calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%, #0000 72%) no-repeat;
         }
 
-        /* Apply custom masks for each corner */
         .top-right {
             mask:
                 right calc(var(--s) + var(--r)) top 0 var(--_m),
@@ -116,10 +110,8 @@
                 <h1 class="text-[44px] font-bold pb-[18px] md:text-[48px]">Your AI Prompt <br /> Companion</h1>
             </div>
 
-            <!-- Center Circle (Illustration) -->
             <div
                 class="mt-[-130px] flex items-center rounded-full justify-center bg-purple-900 border-4 border-gray-800 w-[250px] aspect-square mx-auto">
-                <!-- Insert image or animated SVG here -->
                 <img src="https://pic.pnnet.dev/256x256" alt="" class="w-3/4 rounded-full">
             </div>
 
