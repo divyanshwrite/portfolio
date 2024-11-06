@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttkarsh Bisht | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="https://loremicon.com/grad/128/128/34557609255/jpg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .bs {
+            height: 50px;
+            width: 50px;
+        }
+
+        .custom-clip-path {
+            /* clip-path: circle(50px at 0 0); */
+            clip-path: path("M 0 20 C 0 0, 20 0, 40 0 L 100% 0, 100% 100%, 0 100%, 0 40 C 0 30, 0 20 Z");
+        }
+
+        .card {
+            --r: 25px;
+            /* corner radius */
+            --s: 100px;
+            /* corner size */
+            width: 100%;
+            height: auto;
+            padding: 2rem;
+            background-color: #1F2937;
+            /* Card background color */
+            color: #fff;
+            /* Text color */
+            /* border-radius: var(--r);  */
+            --_m: /calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%, #0000 72%) no-repeat;
+        }
+
+        /* Apply custom masks for each corner */
+        .top-right {
+            mask:
+                right calc(var(--s) + var(--r)) top 0 var(--_m),
+                right calc(var(--s) + var(--r)) var(--_m),
+                radial-gradient(var(--s) at 100% 0, #0000 99%, #000 101%) calc(-1 * var(--r)) var(--r) no-repeat,
+                conic-gradient(at calc(100% - var(--s) - 2 * var(--r)) calc(var(--s) + 2 * var(--r)),
+                    #0000 25%, #000 0);
+        }
+
+        .top-left {
+            mask:
+                calc(var(--s) + var(--r)) 0 var(--_m),
+                0 calc(var(--s) + var(--r)) var(--_m),
+                radial-gradient(var(--s) at 0 0, #0000 99%, #000 101%) var(--r) var(--r) no-repeat,
+                conic-gradient(at calc(var(--s) + 2 * var(--r)) calc(var(--s) + 2 * var(--r)),
+                    #000 75%, #0000 0);
+        }
+
+        .bottom-left {
+            mask:
+                calc(var(--s) + var(--r)) bottom var(--_m),
+                bottom calc(var(--s) + var(--r)) left 0 var(--_m),
+                radial-gradient(var(--s) at 0 100%, #0000 99%, #000 101%) var(--r) calc(-1 * var(--r)) no-repeat,
+                conic-gradient(from 180deg at calc(var(--s) + 2 * var(--r)) calc(100% - var(--s) - 2 * var(--r)),
+                    #0000 25%, #000 0);
+        }
+
+        .bottom-right {
+            mask:
+                right 0 bottom calc(var(--s) + var(--r)) var(--_m),
+                right calc(var(--s) + var(--r)) bottom 0 var(--_m),
+                radial-gradient(var(--s) at 100% 100%, #0000 99%, #000 101%) calc(-1 * var(--r)) calc(-1 * var(--r)) no-repeat,
+                conic-gradient(from 90deg at calc(100% - var(--s) - 2 * var(--r)) calc(100% - var(--s) - 2 * var(--r)),
+                    #0000 25%, #000 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 bg-gray-900 h-full md:h-screen p-8 lg:h-screen xl:h-screen 2xl:h-screen" style="height: auto;">
+        <!-- Left Column -->
+        <div class="flex flex-col gap-2">
+            <!-- Top Left Box -->
+            <div class="bg-gray-800 rounded-lg p-6 text-white flex flex-col items-start pl-8 place-content-between">
+                <h2
+                    class="lg:text-[36px] font-semibold bg-gradient-to-r from-[#FFFFFF] font-bold to-[#AA9CFC] bg-clip-text text-transparent">
+                    Effortless <br /> Prompt<br /> Perfection</h2>
+                <p class="mt-[150px] text-[18px] text-[#E6E3FF] font-bold">14 days trial <span
+                        class="font-thin text-[#ACA0E4] text-[16px]"><br> after – $5/month</span> </p>
+            </div>
+
+            <!-- Middle Left Box -->
+            <div class="bg-gray-800 rounded-lg text-white flex flex-col items-center">
+                <h2
+                    class="text-[62px] font-semibold bg-gradient-to-r from-[#FFB266] via-[#E9766F] to-[#C04350] text-transparent bg-clip-text">
+                    12K</h2>
+                <p class="text-[18px] text-[#B2A1FD]">Happy Users</p>
+                <!-- Users avatars can go here -->
+                <div class="flex mt-2 space-x-1 pb-4">
+                    <img src="https://pic.pnnet.dev/256x256" alt="User 1" class="w-8 h-8 rounded-full">
+                    <img src="https://pic.pnnet.dev/256x256" alt="User 2" class="w-8 h-8 rounded-full">
+                </div>
+            </div>
+
+            <!-- Bottom Left Box -->
+            <div class="bg-gray-800 rounded-lg p-4 text-white text-center">
+                <button class="text-lg font-semibold bg-purple-600 py-2 px-6 rounded-lg">Generate</button>
+            </div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="flex flex-col gap-2 col-span-2">
+            <!-- Top Center Box (Main Title) -->
+            <div class="bg-[#653AD8]  p-8 text-white rounded-lg text-center bg-purple-500 p-8 h-[415px]">
+                <h4 class=" text-[20px] text-[#FAF9F6] font-semibold">PromptPal</h4>
+                <h1 class="text-[44px] font-bold pb-[18px] md:text-[48px]">Your AI Prompt <br /> Companion</h1>
+            </div>
+
+            <!-- Center Circle (Illustration) -->
+            <div
+                class="mt-[-130px] flex items-center rounded-full justify-center bg-purple-900 border-4 border-gray-800 w-[250px] aspect-square mx-auto">
+                <!-- Insert image or animated SVG here -->
+                <img src="https://pic.pnnet.dev/256x256" alt="" class="w-3/4 rounded-full">
+            </div>
+
+            <!-- Bottom Center Row with Two Boxes -->
+            <div class="flex gap-4 mt-[-130px]">
+
+
+                <div class="card top-right rounded-lg">
+                    <div class="mt-[133px]">
+                        <h2 class="text-lg font-semibold text-[#E6E3FF]">Branching Paths</h2>
+                        <p class="mt-1 text-sm text-[#ACA0E4]">Explore multiple prompt directions with branching.</p>
+                    </div>
+                </div>
+
+                <!-- Card with top-left inverted radius corner -->
+                <div class="card top-left rounded-lg">
+                    <div class="mt-[133px]">
+                        <h2 class="text-lg font-semibold text-[#E6E3FF]">Keyword Enhancer</h2>
+                        <p class="mt-1 text-sm text-[#ACA0E4]">Boost your prompt precision with keywords.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="flex flex-col gap-2">
+            <!-- Top Right Box -->
+            <div class="bg-gray-800 rounded-lg p-6 text-white flex flex-col items-center mb-[11px]">
+                <h2 class="text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#F5F1FF] to-[#6633EE]">25M</h2>
+                <p class="text-[18px] text-[#B2A1FD]">created prompts</p>
+            </div>
+
+            <!-- Middle Right Box -->
+            <div class="bg-gray-800 rounded-lg p-6 text-white">
+                <h2 class="text-lg font-semibold">Prompt templates</h2>
+                <p class="text-sm mt-1">Use pre-made templates to jumpstart creativity.</p>
+            </div>
+
+            <!-- Bottom Right Box with Icons -->
+            <div class="bg-gray-800 rounded-lg p-6 text-white flex flex-col items-start gap-2 h-[24.2rem]">
+                <div class="bg-purple-600 text-white py-1 px-3 rounded-full text-sm">14 days trial</div>
+                <!-- Feature tags -->
+                <div class="flex space-x-2 mt-2">
+                    <span class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm">Rewrite</span>
+                    <span class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm">JPG</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
