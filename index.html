@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="https://loremicon.com/grad/128/128/34557609255/jpg" type="image/x-icon">
     <script src="script.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
         .bs {
@@ -79,10 +78,10 @@
 <body>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 bg-gray-900 min-h-screen p-8">
         <!-- Left Column -->
-        <div class="flex flex-col gap-4 h-100">
+        <div class="flex flex-col gap-4 h-full">
             <!-- Top Left Box -->
             <div
-                class="flex flex-col place-content-around bg-gray-800 rounded-3xl  text-white items-start pt-2 pl-6 h-2/4 md:h-2/4">
+                class="flex flex-col place-content-around bg-gray-800 rounded-3xl  text-white items-start pt-2 pl-6 h-[50%] md:h-[50%%]">
                 <h2
                     class="lg:text-[36px] font-semibold bg-gradient-to-r from-[#FFFFFF] font-bold to-[#AA9CFC] bg-clip-text text-transparent">
                     Transforming Ideas into Scalable Tech</h2>
@@ -92,11 +91,11 @@
             </div>
 
             <!-- Middle Left Box -->
-            <div class="bg-gray-800 rounded-3xl text-white flex flex-col items-center">
+            <div class="bg-gray-800 rounded-3xl text-white flex flex-col items-center md:h-1/4 xl:h-1/4 items-center justify-center">
                 <h2
                     class="text-[62px] font-semibold bg-gradient-to-r from-[#FFB266] via-[#E9766F] to-[#C04350] text-transparent bg-clip-text">
                     8+</h2>
-                <p class="text-[18px] text-[#B2A1FD] pb-12">Years of Experience</p>
+                <p class="text-[18px] text-[#B2A1FD]">Years of Experience</p>
                 <!-- Users avatars can go here -->
                 <!-- <div class="flex mt-2 space-x-1 pb-4">
                     <img src="https://pic.pnnet.dev/256x256" alt="User 1" class="w-8 h-8 rounded-full">
@@ -105,7 +104,7 @@
             </div>
 
             <!-- Bottom Left Box -->
-            <div class="bg-gray-800 rounded-3xl p-4 text-white text-center">
+            <div class="bg-gray-800 rounded-3xl p-4 text-white text-center md:h-1/4 xl:h-1/4 flex items-center justify-center">
                 <button class="text-lg font-semibold bg--600 py-2 px-6 rounded-3xl">
                     <a href="https://github.com/ashubisht" target="_blank">
                         <i class='bx bxl-github text-[35px]'></i>
@@ -122,7 +121,7 @@
         <!-- Center Column -->
         <div class="flex flex-col gap-4 col-span-2">
             <!-- Top Center Box (Main Title) -->
-            <div class="p-8 text-white rounded-3xl text-center h-2/4"
+            <div class="p-8 text-white rounded-3xl text-center h-[50%]"
                 style="background: radial-gradient(circle at bottom, #c09bff, #825aff 40%, #4b1ea8 80%);">
                 <h4 class=" text-[20px] text-[#FAF9F6] font-semibold">Utkarsh Bisht</h4>
                 <h1 class="text-[44px] font-bold pb-[18px] md:text-[48px]">Blockchain & <br />Software Engineer</h1>
@@ -131,15 +130,12 @@
             <!-- Center Circle (Illustration) -->
             <div
                 class="mt-[-130px] flex items-center rounded-full justify-center bg--900 border-4 border-gray-800 w-[250px] aspect-square mx-auto">
-                <!-- Insert image or animated SVG here -->
                 <img src="https://i.pinimg.com/736x/fe/f3/95/fef3956baa6a5c13f6d47fc98f696faf.jpg" alt=""
                     class="w-3/4 rounded-full w-auto">
             </div>
 
             <!-- Bottom Center Row with Two Boxes -->
-            <div class="flex gap-4 mt-[-130px]">
-
-
+            <div class="flex gap-4 mt-[-130px] h-2/4">
                 <div class="card top-right rounded-3xl">
                     <div class="mt-[133px]">
                         <h2 class="text-lg font-semibold text-[#E6E3FF]">Certifications</h2>
@@ -162,24 +158,28 @@
         </div>
 
         <!-- Right Column -->
-        <div class="flex flex-col gap-7">
+        <div class="flex flex-col gap-4 h-100">
             <!-- Top Right Box -->
-            <div class="bg-gray-800 rounded-3xl p-6 text-white h-full flex-grow flex flex-col justify-center h-1/4 ">
-                <h2 class="text-lg font-semibold">Blockchain Solutions</h2>
-                <p class="text-sm mt-1">Developed Redbelly Blockchain and several enterprise projects</p>
-            </div>
-            <!-- Second Box (to match height with Top Right Box) -->
-            <div class="bg-gray-800 rounded-3xl p-6 text-white flex flex-col items-center h-full flex-grow justify-center h-1/4">
+             
+            <div class="bg-gray-800 rounded-3xl p-6 text-white flex flex-col items-center h-full flex-grow justify-center md:h-1/4">
                 <h2
                     class="text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#F5F1FF] to-[#6633EE] ">
                     1.2M</h2>
                 <p class="text-[18px] text-[#B2A1FD] text-center">Transactions handled in a single job cycle</p>
             </div>
+            
+            <div class="bg-gray-800 rounded-3xl p-6 text-white flex flex-col items-center h-full flex-grow justify-center md:h-auto">
+                <h2
+                    class="text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#F5F1FF] to-[#6633EE] ">
+                    1.2M</h2>
+                <p class="text-[18px] text-[#B2A1FD] text-center">Transactions handled in a single job cycle</p>
 
+            </div>
 
+            
             <!-- Middle Right Box -->
 
-            <div class=" h-auto bg-gray-800 rounded-3xl p-6 text-white flex flex-col items-start gap-4 h-[24.2rem]">
+            <div class=" h-auto bg-gray-800 rounded-3xl p-6 text-white flex flex-col items-start gap-4 h-[64%] md:h-[69%]">
                 <h2 class="text-lg font-semibold">Blockchain Expertise </h2>
                 <div class="flex gap-7">
                     <div class="bg-purple-600 text-white py-1 px-3 rounded-full text-sm">Corda</div>
@@ -201,13 +201,13 @@
                 </div>
                 <span class="bg-purple-700 text-white py-1 px-3 rounded-full text-sm">TypeScript</span>
 
-                <h2 class="text-lg font-semibold">Protocols </h2>
+                <!-- <h2 class="text-lg font-semibold">Protocols </h2>
 
                 <div class="flex space-x-2 mt-2">
                     <span class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm">REST</span>
                     <span class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm">GraphQL</span><br />
                     <span class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm">WebSockets</span>
-                </div>
+                </div> -->
             </div>
 
 
